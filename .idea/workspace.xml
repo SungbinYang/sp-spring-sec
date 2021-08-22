@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="778b717f-a1e9-4ad8-990e-1dc32e110dd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/basic-test/src/main/java/com/sp/fc/web/BasicTestApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-test/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-test/src/main/java/com/sp/fc/web/controller/SecurityMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-test/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/basic-test/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-test/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-test/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-test/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +200,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629619898853</updated>
-      <workItem from="1629619901575" duration="3714000" />
+      <workItem from="1629619901575" duration="4462000" />
     </task>
     <task id="LOCAL-00001" summary="gradle 프로젝트 구성">
       <created>1629621004901</created>
@@ -234,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629622624763</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="스프링 시큐리티란?">
+      <created>1629624025549</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1629624025549</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +263,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gradle 프로젝트 구성" />
-    <option name="LAST_COMMIT_MESSAGE" value="gradle 프로젝트 구성" />
+    <MESSAGE value="스프링 시큐리티란?" />
+    <option name="LAST_COMMIT_MESSAGE" value="스프링 시큐리티란?" />
   </component>
 </project>
