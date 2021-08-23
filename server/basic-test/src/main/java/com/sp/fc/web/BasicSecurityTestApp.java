@@ -10,7 +10,4 @@ public class BasicSecurityTestApp {
     public static void main(String[] args) {
         SpringApplication.run(BasicSecurityTestApp.class, args);
     }
-
-
-
 }
