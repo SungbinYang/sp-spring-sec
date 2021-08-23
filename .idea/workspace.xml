@@ -85,6 +85,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1x4giAoFD4ONbSydITtrgDsirxS" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -151,19 +159,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="sp-fastcampus-spring-sec" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="sp-fastcampus-spring-sec" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BasicTestApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sp-fastcampus-spring-sec.server-basic-test.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.BasicTestApplication" />
@@ -201,6 +196,7 @@
       <option name="presentableId" value="Default" />
       <updated>1629619898853</updated>
       <workItem from="1629619901575" duration="4462000" />
+      <workItem from="1629718270073" duration="769000" />
     </task>
     <task id="LOCAL-00001" summary="gradle 프로젝트 구성">
       <created>1629621004901</created>
@@ -260,6 +256,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gradle 프로젝트 구성" />
