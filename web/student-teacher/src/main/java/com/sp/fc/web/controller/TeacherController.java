@@ -2,6 +2,7 @@ package com.sp.fc.web.controller;
 
 import com.sp.fc.web.student.StudentManager;
 import com.sp.fc.web.teacher.Teacher;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -13,10 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/teacher")
+@RequiredArgsConstructor
 public class TeacherController {
 
-    @Autowired
-    private StudentManager studentManager;
+
+    private final StudentManager studentManager;
 
 
     @PreAuthorize("hasAnyAuthority('ROLE_TEACHER')")

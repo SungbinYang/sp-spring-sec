@@ -31,6 +31,7 @@ public class MultiChainProxyTest {
                 HttpMethod.GET, null, new ParameterizedTypeReference<List<Student>>() {
                 });
 
+        System.out.println(resp.getBody());
         assertNotNull(resp.getBody());
         assertEquals(3, resp.getBody().size());
     }
