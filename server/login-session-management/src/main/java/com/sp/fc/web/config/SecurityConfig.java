@@ -13,6 +13,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.annotation.web.configurers.SessionManagementConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.session.SessionRegistry;
@@ -159,12 +160,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionManagement(
                         s->s
 //                                .sessionCreationPolicy(p-> SessionCreationPolicy.S)
-                                .sessionFixation(sessionFixationConfigurer -> sessionFixationConfigurer.changeSessionId())
+                                .sessionFixation(SessionManagementConfigurer.SessionFixationConfigurer::changeSessionId)
                         .maximumSessions(2)
                         .maxSessionsPreventsLogin(true)
                         .expiredUrl("/session-expired")
-                )
-                ;
+                );
     }
 
     @Override
