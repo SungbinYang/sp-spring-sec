@@ -1,5 +1,6 @@
 package com.sp.fc.web.config;
 
+import com.sp.fc.web.service.Paper;
 import lombok.Getter;
 import lombok.Setter;
 import org.aopalliance.intercept.MethodInvocation;
@@ -25,14 +26,16 @@ public class CustomMethodSecurityExpressionRoot extends SecurityExpressionRoot
 
     public boolean isStudent(){
         return getAuthentication().getAuthorities().stream()
-                .filter(a->a.getAuthority().equals("ROLE_STUDENT"))
-                .findAny().isPresent();
+                .anyMatch(a->a.getAuthority().equals("ROLE_STUDENT"));
     }
 
     public boolean isTutor(){
         return getAuthentication().getAuthorities().stream()
-                .filter(a->a.getAuthority().equals("ROLE_TUTOR"))
-                .findAny().isPresent();
+                .anyMatch(a->a.getAuthority().equals("ROLE_TUTOR"));
+    }
+
+    public boolean notPrepareState(Paper paper) {
+        return paper.getState() != com.sp.fc.web.service.Paper.State.PREPARE;
     }
 
     @Override

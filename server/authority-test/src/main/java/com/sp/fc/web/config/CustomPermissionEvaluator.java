@@ -2,7 +2,7 @@ package com.sp.fc.web.config;
 
 import com.sp.fc.web.service.Paper;
 import com.sp.fc.web.service.PaperService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.core.Authentication;
@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Component
 public class CustomPermissionEvaluator implements PermissionEvaluator {
 
-    @Autowired
+    @Lazy
     private PaperService paperService;
 
     @Override
@@ -32,8 +32,7 @@ public class CustomPermissionEvaluator implements PermissionEvaluator {
 
         if(paper.getState() == Paper.State.PREPARE) return false;
 
-        boolean canUse = paper.getStudentIds().stream().filter(userId -> userId.equals(authentication.getName()))
-                .findAny().isPresent();
+        boolean canUse = paper.getStudentIds().stream().anyMatch(userId -> userId.equals(authentication.getName()));
 
         return canUse;
     }
