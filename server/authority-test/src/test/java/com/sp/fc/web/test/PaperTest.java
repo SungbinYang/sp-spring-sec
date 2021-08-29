@@ -12,6 +12,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -89,4 +90,21 @@ public class PaperTest extends WebIntegrationTest{
         assertEquals(403, response.getStatusCodeValue());
     }
 
+    @DisplayName("4. 교장선생님은 모든 시홈지를 볼 수 있다.")
+    @Test
+    void test_4(){
+        paperService.setPaper(paper1);
+        paperService.setPaper(paper2);
+        paperService.setPaper(paper3);
+
+        client = new TestRestTemplate("primary", "1111");
+        ResponseEntity<List<Paper>> response = client.exchange(uri("/paper/getPapersByPrimary"),
+                HttpMethod.GET, null, new ParameterizedTypeReference<List<Paper>>() {
+        });
+
+        assertEquals(200, response.getStatusCodeValue());
+        assertEquals(3, Objects.requireNonNull(response.getBody()).size());
+        System.out.println(response.getBody());
+
+    }
 }
