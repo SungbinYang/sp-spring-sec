@@ -12,5 +12,4 @@ public interface SchoolRepository extends JpaRepository<School, Long> {
     List<String> getCities();
 
     List<School> findAllByCity(String city);
-
 }

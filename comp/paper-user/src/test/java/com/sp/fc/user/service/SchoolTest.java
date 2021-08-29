@@ -14,17 +14,19 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DataJpaTest
-public class SchoolTest {
+class SchoolTest {
 
     @Autowired
     private SchoolRepository schoolRepository;
 
     private SchoolService schoolService;
+
     private SchoolTestHelper schoolTestHelper;
+
     School school;
 
     @BeforeEach
-    void before(){
+    void before() {
         this.schoolRepository.deleteAll();
         this.schoolService = new SchoolService(schoolRepository);
         this.schoolTestHelper = new SchoolTestHelper(this.schoolService);
@@ -33,7 +35,7 @@ public class SchoolTest {
 
     @DisplayName("1. 학교를 생성한다.")
     @Test
-    void test_1(){
+    void test_1() {
         List<School> list = schoolRepository.findAll();
         assertEquals(1, list.size());
         SchoolTestHelper.assertSchool(list.get(0), "테스트 학교", "서울");
