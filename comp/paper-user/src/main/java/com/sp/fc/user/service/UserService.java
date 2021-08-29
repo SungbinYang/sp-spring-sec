@@ -18,7 +18,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 @Service
 @Transactional
@@ -86,7 +85,7 @@ public class UserService {
         userRepository.updateUserName(userId, userName, LocalDateTime.now());
     }
 
-    public Optional<User> findBuEmail(String email) {
+    public Optional<User> findByEmail(String email) {
         return userRepository.findByEmail(email);
     }
 
