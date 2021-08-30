@@ -1,0 +1,13 @@
+
+v
+java:S2293K"YReplace the type specification in this constructor call with the diamond operator ("<>").(™çå8ª¿¬”¸/
+}
+java:S1128"[Remove this unused import 'org.springframework.security.config.http.SessionCreationPolicy'.(‚ÌÎîüÿÿÿÿ8Ù¿¬”¸/
+z
+java:S1128"XRemove this unused import 'org.springframework.security.web.access.AccessDeniedHandler'.(½í•Îüÿÿÿÿ8Ù¿¬”¸/
+¡
+java:S1128"ƒRemove this unused import 'org.springframework.security.web.authentication.session.ConcurrentSessionControlAuthenticationStrategy'.(¯ñÙ·8Ú¿¬”¸/
+”
+java:S1128"rRemove this unused import 'org.springframework.security.web.authentication.session.SessionAuthenticationStrategy'.(£¥®Ïşÿÿÿÿ8Ú¿¬”¸/
+
+java:S1128 "]Remove this unused import 'org.springframework.security.web.session.ConcurrentSessionFilter'.(àœ„£ûÿÿÿÿ8Û¿¬”¸/

@@ -1,0 +1,13 @@
+com/sp/fc/service/helper/PaperTemplateTestHelper.java
+ com.sp.fc.service.helper.PaperTemplateTestHelper
+com/sp/fc/PaperTestApp.java
+ com.sp.fc.PaperTestApp
+ com.sp.fc.PaperTestApp$JpaConfig
+com/sp/fc/service/helper/WithPaperTemplateTest.java
+ com.sp.fc.service.helper.WithPaperTemplateTest
+com/sp/fc/service/PaperTemplateTest.java
+ com.sp.fc.service.PaperTemplateTest
+com/sp/fc/service/PaperTest.java
+ com.sp.fc.service.PaperTest
+com/sp/fc/service/PaperSolveTest.java
+ com.sp.fc.service.PaperSolveTest

@@ -91,8 +91,7 @@ public class PaperTemplateService {
     @Transactional(readOnly = true)
     public Map<Integer, String> getPaperAnswerSheet(Long paperTemplateId) {
         Optional<PaperTemplate> template = findById(paperTemplateId);
-        if(!template.isPresent()) return new HashMap<>();
-        return template.get().getProblemList().stream().collect(Collectors.toMap(Problem::getIndexNum, Problem::getAnswer));
+        return template.map(paperTemplate -> paperTemplate.getProblemList().stream().collect(Collectors.toMap(Problem::getIndexNum, Problem::getAnswer))).orElseGet(HashMap::new);
     }
 
     @Transactional(readOnly = true)

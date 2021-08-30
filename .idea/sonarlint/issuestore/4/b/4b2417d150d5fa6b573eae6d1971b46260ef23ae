@@ -1,0 +1,11 @@
+
+l
+java:S1128"ORemove this unused import 'org.springframework.cache.annotation.EnableCaching'.(ÍŠ³Ï8î‰¾þ¸/
+o
+java:S1128"RRemove this unused import 'org.springframework.cache.ehcache.EhCacheCacheManager'.(Ë±²Ó8µø½þ¸/
+u
+java:S1128"XRemove this unused import 'org.springframework.cache.ehcache.EhCacheManagerFactoryBean'.(àÈ§Ÿ8µø½þ¸/
+e
+java:S1128"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Þ8µø½þ¸/
+s
+java:S1128"QRemove this unused import 'org.springframework.context.annotation.Configuration'.(¬²Úäþÿÿÿÿ8ð‰¾þ¸/

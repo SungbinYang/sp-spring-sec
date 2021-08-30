@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - 템플릿을 가지고 학습자들에게 시험지를 낸다.</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>템플릿을 가지고 학습자들에게 시험지를 낸다.</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.sp.fc.service.html">com.sp.fc.service</a> &gt; PaperTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.463s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">3. 시험지 삭제 기능</td>
+<td class="success">시험지_삭제_기능()</td>
+<td class="success">0.086s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">1. 시험지 템플릿을 학습자1에게 시험지를 낸다.</td>
+<td class="success">시험지_템플릿을_학습자1에게_시험지를_낸다()</td>
+<td class="success">0.323s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">2. 시험지를 2명 이상의 user 를 검색해 낸다. (학습자1, 학습자2)</td>
+<td class="success">시험지를_2명_이상의_user를_검색해_낸다()</td>
+<td class="success">0.054s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>06:04:36.854 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+06:04:36.864 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+06:04:36.908 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.sp.fc.service.PaperTest] from class [org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper]
+06:04:36.919 [Test worker] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.sp.fc.service.PaperTest], using SpringBootContextLoader
+06:04:36.924 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.sp.fc.service.PaperTest]: class path resource [com/sp/fc/service/PaperTest-context.xml] does not exist
+06:04:36.924 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.sp.fc.service.PaperTest]: class path resource [com/sp/fc/service/PaperTestContext.groovy] does not exist
+06:04:36.925 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.sp.fc.service.PaperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+06:04:36.925 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.sp.fc.service.PaperTest]: PaperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+06:04:36.982 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.sp.fc.service.PaperTest]
+06:04:37.039 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/rovert/Desktop/study/Backend/fastcampus/security/lec1/sp-fastcampus-spring-sec/comp/paper/build/classes/java/test/com/sp/fc/PaperTestApp.class]
+06:04:37.039 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.sp.fc.PaperTestApp for test class com.sp.fc.service.PaperTest
+06:04:37.042 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - @TestExecutionListeners is not present for class [com.sp.fc.service.PaperTest]: using defaults.
+06:04:37.043 [Test worker] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+06:04:37.049 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+06:04:37.056 [Test worker] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ccecf20, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@73a5e7e5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f688d65, org.springframework.test.context.support.DirtiesContextTestExecutionListener@60d70fc0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5ada7b35, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@61c3544, org.springframework.test.context.event.EventPublishingTestExecutionListener@6df48347, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@35852836, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3c8fee60, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5b5e5aa0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@12791437, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@e214ad6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4d1e499c]
+06:04:37.059 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@52ee03c5 testClass = PaperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e8467df testClass = PaperTest, locations = '{}', classes = '{class com.sp.fc.PaperTestApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@ae30538, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@104db479, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e5015237, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6cac0485, [ImportsContextCustomizer@3cbc4aa0 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52af207c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14b40924, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+06:04:37.073 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@52ee03c5 testClass = PaperTest, testInstance = com.sp.fc.service.PaperTest@4050abf6, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e8467df testClass = PaperTest, locations = '{}', classes = '{class com.sp.fc.PaperTestApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@ae30538, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@104db479, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e5015237, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6cac0485, [ImportsContextCustomizer@3cbc4aa0 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52af207c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14b40924, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+06:04:37.097 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.1)
+
+2021-08-30 06:04:37.381  INFO 9015 --- [    Test worker] com.sp.fc.service.PaperTest              : Starting PaperTest using Java 15.0.2 on yangsungbinui-MacBookPro.local with PID 9015 (started by rovert in /Users/rovert/Desktop/study/Backend/fastcampus/security/lec1/sp-fastcampus-spring-sec/comp/paper)
+2021-08-30 06:04:37.383  INFO 9015 --- [    Test worker] com.sp.fc.service.PaperTest              : No active profile set, falling back to default profiles: default
+2021-08-30 06:04:37.670  INFO 9015 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-30 06:04:37.748  INFO 9015 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 6 JPA repository interfaces.
+2021-08-30 06:04:37.859  INFO 9015 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2021-08-30 06:04:37.997  INFO 9015 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:ea4f2793-3752-4003-aa46-fd7d648141ec;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2021-08-30 06:04:38.384  INFO 9015 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-30 06:04:38.421  INFO 9015 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-08-30 06:04:38.525  INFO 9015 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-30 06:04:38.618  INFO 9015 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table if exists authority CASCADE 
+Hibernate: drop table if exists paper CASCADE 
+Hibernate: drop table if exists paper_answer CASCADE 
+Hibernate: drop table if exists paper_template CASCADE 
+Hibernate: drop table if exists problem CASCADE 
+Hibernate: drop table if exists school CASCADE 
+Hibernate: drop table if exists user CASCADE 
+Hibernate: create table authority (user_id bigint not null, authority varchar(255) not null, authorities_user_id bigint, primary key (user_id, authority))
+Hibernate: create table paper (paper_id bigint generated by default as identity, answered integer not null, correct integer not null, created timestamp, end_time timestamp, name varchar(255), paper_template_id bigint, start_time timestamp, state integer, study_user_id bigint, total integer not null, primary key (paper_id))
+Hibernate: create table paper_answer (num integer not null, paper_id bigint not null, answer varchar(255), answered timestamp, correct boolean not null, problem_id bigint, paper_paper_id bigint, primary key (num, paper_id))
+Hibernate: create table paper_template (paper_template_id bigint generated by default as identity, complete_count bigint not null, created timestamp, name varchar(255), published_count bigint not null, total integer not null, updated timestamp, user_id bigint, primary key (paper_template_id))
+Hibernate: create table problem (problem_id bigint generated by default as identity, answer varchar(255), content varchar(255), created timestamp, index_num integer not null, paper_template_id bigint, updated timestamp, problem_list_paper_template_id bigint, primary key (problem_id))
+Hibernate: create table school (school_id bigint generated by default as identity, city varchar(255), created timestamp, name varchar(255), updated timestamp, primary key (school_id))
+Hibernate: create table user (user_id bigint generated by default as identity, created timestamp, email varchar(255), enabled boolean not null, grade varchar(255), name varchar(255), password varchar(255), updated timestamp, school_school_id bigint, teacher_user_id bigint, primary key (user_id))
+Hibernate: alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)
+Hibernate: alter table authority add constraint userId foreign key (authorities_user_id) references user
+Hibernate: alter table paper_answer add constraint paperId foreign key (paper_paper_id) references paper
+Hibernate: alter table problem add constraint paperTemplateId foreign key (problem_list_paper_template_id) references paper_template
+Hibernate: alter table user add constraint FKseyt2365cjhujil9s8h0vip2n foreign key (school_school_id) references school
+Hibernate: alter table user add constraint FK9ooquxn49edvi3ng03569w1xb foreign key (teacher_user_id) references user
+2021-08-30 06:04:39.277  INFO 9015 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-30 06:04:39.283  INFO 9015 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-30 06:04:40.013  INFO 9015 --- [    Test worker] com.sp.fc.service.PaperTest              : Started PaperTest in 2.913 seconds (JVM running for 3.878)
+2021-08-30 06:04:40.040  INFO 9015 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@52ee03c5 testClass = PaperTest, testInstance = com.sp.fc.service.PaperTest@4050abf6, testMethod = 시험지_템플릿을_학습자1에게_시험지를_낸다@PaperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e8467df testClass = PaperTest, locations = '{}', classes = '{class com.sp.fc.PaperTestApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@ae30538, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@104db479, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e5015237, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6cac0485, [ImportsContextCustomizer@3cbc4aa0 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52af207c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14b40924, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@39572272]; rollback [true]
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_
+Hibernate: select problem0_.problem_id as problem_1_4_, problem0_.answer as answer2_4_, problem0_.content as content3_4_, problem0_.created as created4_4_, problem0_.index_num as index_nu5_4_, problem0_.paper_template_id as paper_te6_4_, problem0_.updated as updated7_4_ from problem problem0_
+Hibernate: select papertempl0_.paper_template_id as paper_te1_3_, papertempl0_.complete_count as complete2_3_, papertempl0_.created as created3_3_, papertempl0_.name as name4_3_, papertempl0_.published_count as publishe5_3_, papertempl0_.total as total6_3_, papertempl0_.updated as updated7_3_, papertempl0_.user_id as user_id8_3_ from paper_template papertempl0_
+Hibernate: select school0_.school_id as school_i1_5_, school0_.city as city2_5_, school0_.created as created3_5_, school0_.name as name4_5_, school0_.updated as updated5_5_ from school school0_
+Hibernate: select user0_.user_id as user_id1_6_, user0_.created as created2_6_, user0_.email as email3_6_, user0_.enabled as enabled4_6_, user0_.grade as grade5_6_, user0_.name as name6_6_, user0_.password as password7_6_, user0_.school_school_id as school_s9_6_, user0_.teacher_user_id as teacher10_6_, user0_.updated as updated8_6_ from user user0_
+Hibernate: insert into school (school_id, city, created, name, updated) values (null, ?, ?, ?, ?)
+Hibernate: insert into user (user_id, created, email, enabled, grade, name, password, school_school_id, teacher_user_id, updated) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select authority0_.user_id as user_id1_0_0_, authority0_.authority as authorit2_0_0_ from authority authority0_ where authority0_.user_id=? and authority0_.authority=?
+Hibernate: insert into authority (user_id, authority) values (?, ?)
+Hibernate: insert into user (user_id, created, email, enabled, grade, name, password, school_school_id, teacher_user_id, updated) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select authority0_.user_id as user_id1_0_0_, authority0_.authority as authorit2_0_0_ from authority authority0_ where authority0_.user_id=? and authority0_.authority=?
+Hibernate: insert into authority (user_id, authority) values (?, ?)
+Hibernate: insert into user (user_id, created, email, enabled, grade, name, password, school_school_id, teacher_user_id, updated) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select authority0_.user_id as user_id1_0_0_, authority0_.authority as authorit2_0_0_ from authority authority0_ where authority0_.user_id=? and authority0_.authority=?
+Hibernate: insert into authority (user_id, authority) values (?, ?)
+Hibernate: insert into paper_template (paper_template_id, complete_count, created, name, published_count, total, updated, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into problem (problem_id, answer, content, created, index_num, paper_template_id, updated) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into problem (problem_id, answer, content, created, index_num, paper_template_id, updated) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: update user set email=?, enabled=?, grade=?, name=?, password=?, school_school_id=?, teacher_user_id=?, updated=? where user_id=?
+Hibernate: update user set email=?, enabled=?, grade=?, name=?, password=?, school_school_id=?, teacher_user_id=?, updated=? where user_id=?
+Hibernate: update user set email=?, enabled=?, grade=?, name=?, password=?, school_school_id=?, teacher_user_id=?, updated=? where user_id=?
+Hibernate: update paper_template set complete_count=?, name=?, published_count=?, total=?, updated=?, user_id=? where paper_template_id=?
+Hibernate: update authority set authorities_user_id=? where user_id=? and authority=?
+Hibernate: update authority set authorities_user_id=? where user_id=? and authority=?
+Hibernate: update authority set authorities_user_id=? where user_id=? and authority=?
+Hibernate: update problem set problem_list_paper_template_id=? where problem_id=?
+Hibernate: update problem set problem_list_paper_template_id=? where problem_id=?
+Hibernate: select user0_.user_id as user_id1_6_, user0_.created as created2_6_, user0_.email as email3_6_, user0_.enabled as enabled4_6_, user0_.grade as grade5_6_, user0_.name as name6_6_, user0_.password as password7_6_, user0_.school_school_id as school_s9_6_, user0_.teacher_user_id as teacher10_6_, user0_.updated as updated8_6_ from user user0_ where user0_.user_id in (?)
+Hibernate: insert into paper (paper_id, answered, correct, created, end_time, name, paper_template_id, start_time, state, study_user_id, total) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_ where paper0_.paper_template_id=?
+2021-08-30 06:04:40.344  INFO 9015 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@52ee03c5 testClass = PaperTest, testInstance = com.sp.fc.service.PaperTest@4050abf6, testMethod = 시험지_템플릿을_학습자1에게_시험지를_낸다@PaperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e8467df testClass = PaperTest, locations = '{}', classes = '{class com.sp.fc.PaperTestApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@ae30538, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@104db479, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e5015237, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6cac0485, [ImportsContextCustomizer@3cbc4aa0 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52af207c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14b40924, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+2021-08-30 06:04:40.352  INFO 9015 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@52ee03c5 testClass = PaperTest, testInstance = com.sp.fc.service.PaperTest@5368b9b2, testMethod = 시험지를_2명_이상의_user를_검색해_낸다@PaperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e8467df testClass = PaperTest, locations = '{}', classes = '{class com.sp.fc.PaperTestApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@ae30538, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@104db479, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e5015237, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6cac0485, [ImportsContextCustomizer@3cbc4aa0 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52af207c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14b40924, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@39572272]; rollback [true]
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_
+Hibernate: select problem0_.problem_id as problem_1_4_, problem0_.answer as answer2_4_, problem0_.content as content3_4_, problem0_.created as created4_4_, problem0_.index_num as index_nu5_4_, problem0_.paper_template_id as paper_te6_4_, problem0_.updated as updated7_4_ from problem problem0_
+Hibernate: select papertempl0_.paper_template_id as paper_te1_3_, papertempl0_.complete_count as complete2_3_, papertempl0_.created as created3_3_, papertempl0_.name as name4_3_, papertempl0_.published_count as publishe5_3_, papertempl0_.total as total6_3_, papertempl0_.updated as updated7_3_, papertempl0_.user_id as user_id8_3_ from paper_template papertempl0_
+Hibernate: select school0_.school_id as school_i1_5_, school0_.city as city2_5_, school0_.created as created3_5_, school0_.name as name4_5_, school0_.updated as updated5_5_ from school school0_
+Hibernate: select user0_.user_id as user_id1_6_, user0_.created as created2_6_, user0_.email as email3_6_, user0_.enabled as enabled4_6_, user0_.grade as grade5_6_, user0_.name as name6_6_, user0_.password as password7_6_, user0_.school_school_id as school_s9_6_, user0_.teacher_user_id as teacher10_6_, user0_.updated as updated8_6_ from user user0_
+Hibernate: insert into school (school_id, city, created, name, updated) values (null, ?, ?, ?, ?)
+Hibernate: insert into user (user_id, created, email, enabled, grade, name, password, school_school_id, teacher_user_id, updated) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select authority0_.user_id as user_id1_0_0_, authority0_.authority as authorit2_0_0_ from authority authority0_ where authority0_.user_id=? and authority0_.authority=?
+Hibernate: insert into authority (user_id, authority) values (?, ?)
+Hibernate: insert into user (user_id, created, email, enabled, grade, name, password, school_school_id, teacher_user_id, updated) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select authority0_.user_id as user_id1_0_0_, authority0_.authority as authorit2_0_0_ from authority authority0_ where authority0_.user_id=? and authority0_.authority=?
+Hibernate: insert into authority (user_id, authority) values (?, ?)
+Hibernate: insert into user (user_id, created, email, enabled, grade, name, password, school_school_id, teacher_user_id, updated) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select authority0_.user_id as user_id1_0_0_, authority0_.authority as authorit2_0_0_ from authority authority0_ where authority0_.user_id=? and authority0_.authority=?
+Hibernate: insert into authority (user_id, authority) values (?, ?)
+Hibernate: insert into paper_template (paper_template_id, complete_count, created, name, published_count, total, updated, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into problem (problem_id, answer, content, created, index_num, paper_template_id, updated) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into problem (problem_id, answer, content, created, index_num, paper_template_id, updated) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: update user set email=?, enabled=?, grade=?, name=?, password=?, school_school_id=?, teacher_user_id=?, updated=? where user_id=?
+Hibernate: update user set email=?, enabled=?, grade=?, name=?, password=?, school_school_id=?, teacher_user_id=?, updated=? where user_id=?
+Hibernate: update user set email=?, enabled=?, grade=?, name=?, password=?, school_school_id=?, teacher_user_id=?, updated=? where user_id=?
+Hibernate: update paper_template set complete_count=?, name=?, published_count=?, total=?, updated=?, user_id=? where paper_template_id=?
+Hibernate: update authority set authorities_user_id=? where user_id=? and authority=?
+Hibernate: update authority set authorities_user_id=? where user_id=? and authority=?
+Hibernate: update authority set authorities_user_id=? where user_id=? and authority=?
+Hibernate: update problem set problem_list_paper_template_id=? where problem_id=?
+Hibernate: update problem set problem_list_paper_template_id=? where problem_id=?
+Hibernate: select user0_.user_id as user_id1_6_, user0_.created as created2_6_, user0_.email as email3_6_, user0_.enabled as enabled4_6_, user0_.grade as grade5_6_, user0_.name as name6_6_, user0_.password as password7_6_, user0_.school_school_id as school_s9_6_, user0_.teacher_user_id as teacher10_6_, user0_.updated as updated8_6_ from user user0_ where user0_.user_id in (? , ?)
+Hibernate: insert into paper (paper_id, answered, correct, created, end_time, name, paper_template_id, start_time, state, study_user_id, total) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into paper (paper_id, answered, correct, created, end_time, name, paper_template_id, start_time, state, study_user_id, total) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_ where paper0_.paper_template_id=?
+2021-08-30 06:04:40.402  INFO 9015 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@52ee03c5 testClass = PaperTest, testInstance = com.sp.fc.service.PaperTest@5368b9b2, testMethod = 시험지를_2명_이상의_user를_검색해_낸다@PaperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e8467df testClass = PaperTest, locations = '{}', classes = '{class com.sp.fc.PaperTestApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@ae30538, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@104db479, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e5015237, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6cac0485, [ImportsContextCustomizer@3cbc4aa0 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52af207c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14b40924, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+2021-08-30 06:04:40.409  INFO 9015 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@52ee03c5 testClass = PaperTest, testInstance = com.sp.fc.service.PaperTest@669ff36b, testMethod = 시험지_삭제_기능@PaperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e8467df testClass = PaperTest, locations = '{}', classes = '{class com.sp.fc.PaperTestApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@ae30538, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@104db479, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e5015237, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6cac0485, [ImportsContextCustomizer@3cbc4aa0 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52af207c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14b40924, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@39572272]; rollback [true]
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_
+Hibernate: select problem0_.problem_id as problem_1_4_, problem0_.answer as answer2_4_, problem0_.content as content3_4_, problem0_.created as created4_4_, problem0_.index_num as index_nu5_4_, problem0_.paper_template_id as paper_te6_4_, problem0_.updated as updated7_4_ from problem problem0_
+Hibernate: select papertempl0_.paper_template_id as paper_te1_3_, papertempl0_.complete_count as complete2_3_, papertempl0_.created as created3_3_, papertempl0_.name as name4_3_, papertempl0_.published_count as publishe5_3_, papertempl0_.total as total6_3_, papertempl0_.updated as updated7_3_, papertempl0_.user_id as user_id8_3_ from paper_template papertempl0_
+Hibernate: select school0_.school_id as school_i1_5_, school0_.city as city2_5_, school0_.created as created3_5_, school0_.name as name4_5_, school0_.updated as updated5_5_ from school school0_
+Hibernate: select user0_.user_id as user_id1_6_, user0_.created as created2_6_, user0_.email as email3_6_, user0_.enabled as enabled4_6_, user0_.grade as grade5_6_, user0_.name as name6_6_, user0_.password as password7_6_, user0_.school_school_id as school_s9_6_, user0_.teacher_user_id as teacher10_6_, user0_.updated as updated8_6_ from user user0_
+Hibernate: insert into school (school_id, city, created, name, updated) values (null, ?, ?, ?, ?)
+Hibernate: insert into user (user_id, created, email, enabled, grade, name, password, school_school_id, teacher_user_id, updated) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select authority0_.user_id as user_id1_0_0_, authority0_.authority as authorit2_0_0_ from authority authority0_ where authority0_.user_id=? and authority0_.authority=?
+Hibernate: insert into authority (user_id, authority) values (?, ?)
+Hibernate: insert into user (user_id, created, email, enabled, grade, name, password, school_school_id, teacher_user_id, updated) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select authority0_.user_id as user_id1_0_0_, authority0_.authority as authorit2_0_0_ from authority authority0_ where authority0_.user_id=? and authority0_.authority=?
+Hibernate: insert into authority (user_id, authority) values (?, ?)
+Hibernate: insert into user (user_id, created, email, enabled, grade, name, password, school_school_id, teacher_user_id, updated) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select authority0_.user_id as user_id1_0_0_, authority0_.authority as authorit2_0_0_ from authority authority0_ where authority0_.user_id=? and authority0_.authority=?
+Hibernate: insert into authority (user_id, authority) values (?, ?)
+Hibernate: insert into paper_template (paper_template_id, complete_count, created, name, published_count, total, updated, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into problem (problem_id, answer, content, created, index_num, paper_template_id, updated) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into problem (problem_id, answer, content, created, index_num, paper_template_id, updated) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: update user set email=?, enabled=?, grade=?, name=?, password=?, school_school_id=?, teacher_user_id=?, updated=? where user_id=?
+Hibernate: update user set email=?, enabled=?, grade=?, name=?, password=?, school_school_id=?, teacher_user_id=?, updated=? where user_id=?
+Hibernate: update user set email=?, enabled=?, grade=?, name=?, password=?, school_school_id=?, teacher_user_id=?, updated=? where user_id=?
+Hibernate: update paper_template set complete_count=?, name=?, published_count=?, total=?, updated=?, user_id=? where paper_template_id=?
+Hibernate: update authority set authorities_user_id=? where user_id=? and authority=?
+Hibernate: update authority set authorities_user_id=? where user_id=? and authority=?
+Hibernate: update authority set authorities_user_id=? where user_id=? and authority=?
+Hibernate: update problem set problem_list_paper_template_id=? where problem_id=?
+Hibernate: update problem set problem_list_paper_template_id=? where problem_id=?
+Hibernate: select user0_.user_id as user_id1_6_, user0_.created as created2_6_, user0_.email as email3_6_, user0_.enabled as enabled4_6_, user0_.grade as grade5_6_, user0_.name as name6_6_, user0_.password as password7_6_, user0_.school_school_id as school_s9_6_, user0_.teacher_user_id as teacher10_6_, user0_.updated as updated8_6_ from user user0_ where user0_.user_id in (? , ?)
+Hibernate: insert into paper (paper_id, answered, correct, created, end_time, name, paper_template_id, start_time, state, study_user_id, total) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into paper (paper_id, answered, correct, created, end_time, name, paper_template_id, start_time, state, study_user_id, total) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_ where paper0_.paper_template_id=? and (paper0_.study_user_id in (?))
+Hibernate: update paper_template set complete_count=?, name=?, published_count=?, total=?, updated=?, user_id=? where paper_template_id=?
+Hibernate: delete from paper where paper_id=?
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_ where paper0_.paper_template_id=?
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_ where paper0_.paper_template_id=? and (paper0_.study_user_id in (?))
+Hibernate: delete from paper where paper_id=?
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_ where paper0_.paper_template_id=?
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_ where paper0_.paper_template_id=? and (paper0_.study_user_id in (?))
+Hibernate: select paper0_.paper_id as paper_id1_1_, paper0_.answered as answered2_1_, paper0_.correct as correct3_1_, paper0_.created as created4_1_, paper0_.end_time as end_time5_1_, paper0_.name as name6_1_, paper0_.paper_template_id as paper_te7_1_, paper0_.start_time as start_ti8_1_, paper0_.state as state9_1_, paper0_.study_user_id as study_u10_1_, paper0_.total as total11_1_ from paper paper0_ where paper0_.paper_template_id=?
+2021-08-30 06:04:40.491  INFO 9015 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@52ee03c5 testClass = PaperTest, testInstance = com.sp.fc.service.PaperTest@669ff36b, testMethod = 시험지_삭제_기능@PaperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e8467df testClass = PaperTest, locations = '{}', classes = '{class com.sp.fc.PaperTestApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@ae30538, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@104db479, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e5015237, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6cac0485, [ImportsContextCustomizer@3cbc4aa0 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52af207c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14b40924, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.7.1</a> at 2021. 8. 30. 오전 6:04:40</p>
+</div>
+</div>
+</body>
+</html>
