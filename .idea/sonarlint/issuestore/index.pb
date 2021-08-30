@@ -67,8 +67,6 @@ U
 %server/login-userdetails/build.gradle,e/1/e1c473a5475eab4abe9242cd18a8de2be596b733
 
 Oserver/login-userdetails/src/main/java/com/sp/fc/web/config/SecurityConfig.java,2/1/214ec8b48eb25260e75f257016b5c9a82b8b9d85
-<
-build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 T
 $server/login-rememberme/build.gradle,5/7/5772f2db2a2ea06e42f69581c8c4019902b84d14
 s
@@ -225,5 +223,9 @@ w
 Gcomp/paper/src/test/java/com/sp/fc/paper/service/PaperTemplateTest.java,7/f/7f682b53ec7eccab70e49cc5bc15c1cf9555121f
 o
 ?comp/paper/src/test/java/com/sp/fc/paper/service/PaperTest.java,f/a/fa9714599a30ed3181d593dab45a93c9000c8844
-M
-server/paper-app/build.gradle,0/6/06a6b5c394ac3b21c5187b8d60a698c7fe4ab671
+z
+Jcomp/paper/src/main/java/com/sp/fc/paper/service/PaperTemplateService.java,2/9/29114a9da3d52a3d685dcecbdfaa24427078f965
+‚
+Rserver/paper-app/src/main/java/com/sp/fc/web/config/OnlinePaperSecurityConfig.java,1/4/145791f4a907362d4817682a9d88ed4f653e54fe
+~
+Nserver/paper-app/src/main/java/com/sp/fc/web/controller/ManagerController.java,c/9/c9d29b6e62364e5b5e47f20ec332cdb996c87f7d
