@@ -51,8 +51,6 @@ y
 Iserver/login-basic/src/main/java/com/sp/fc/web/config/SecurityConfig.java,9/2/923ee81a6f066c4b647140863c54d148387fa3c6
 y
 Iserver/login-basic/src/main/java/com/sp/fc/web/LoginBasicApplication.java,6/4/64b53d4e49c1f50c0942b3c9a1fae48c5d664e52
-E
-web/web-common.gradle,1/d/1dfb26dd30d28d492012c5286da3b92931100823
 t
 Dcomp/user-admin/src/main/java/com/sp/fc/user/domain/SpAuthority.java,d/3/d3fbf1f34f3dff8b66db7f4d55a1c0d0fd4a4801
 o
@@ -187,8 +185,6 @@ u
 Ecomp/paper-user/src/test/java/com/sp/fc/user/service/TeacherTest.java,3/7/37de73ab524a5982dadc95b00f10b07dbed4eb88
 u
 Ecomp/paper-user/src/test/java/com/sp/fc/user/service/StudentTest.java,3/a/3a55b6a3addd0edba15108c87cd9f7407c8ca28a
-G
-comp/paper/build.gradle,4/a/4ac1a98e52ee2619d703bf14898a45414d446608
 u
 Ecomp/paper-user/src/main/java/com/sp/fc/user/service/UserService.java,7/d/7d657ae0d0d1a4a1b6c731996eaf907ec6b8f866
 j
@@ -225,7 +221,5 @@ o
 ?comp/paper/src/test/java/com/sp/fc/paper/service/PaperTest.java,f/a/fa9714599a30ed3181d593dab45a93c9000c8844
 z
 Jcomp/paper/src/main/java/com/sp/fc/paper/service/PaperTemplateService.java,2/9/29114a9da3d52a3d685dcecbdfaa24427078f965
-‚
-Rserver/paper-app/src/main/java/com/sp/fc/web/config/OnlinePaperSecurityConfig.java,1/4/145791f4a907362d4817682a9d88ed4f653e54fe
 ~
 Nserver/paper-app/src/main/java/com/sp/fc/web/controller/ManagerController.java,c/9/c9d29b6e62364e5b5e47f20ec332cdb996c87f7d

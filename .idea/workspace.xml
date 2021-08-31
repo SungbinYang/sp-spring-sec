@@ -5,23 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33bfa5bb-4db2-497a-9ad3-8246d400dcbb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/paper-app/src/main/resources/templates/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/paper-app/src/main/resources/templates/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/paper-app/src/main/resources/templates/sign_layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/java/com/sp/fc/site/manager/controller/ManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/resources/templates/manager/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/resources/templates/manager/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/resources/templates/manager/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/java/com/sp/fc/site/study/controller/StudyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/resources/templates/study/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/resources/templates/study/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/resources/templates/study/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/resources/templates/study/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/java/com/sp/fc/site/teacher/controller/TeacherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/resources/templates/teacher/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/resources/templates/teacher/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/resources/templates/teacher/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/resources/templates/teacher/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/paper-app/src/main/resources/templates/paging.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/java/com/sp/fc/site/manager/controller/SchoolMngController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/java/com/sp/fc/site/manager/controller/StudyMngController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/java/com/sp/fc/site/manager/controller/TeacherMngController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/java/com/sp/fc/site/manager/controller/vo/StudyData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/java/com/sp/fc/site/manager/controller/vo/TeacherData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/resources/templates/manager/school/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/resources/templates/manager/school/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/resources/templates/manager/study/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-manager/src/main/resources/templates/manager/teacher/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/java/com/sp/fc/site/study/controller/vo/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/java/com/sp/fc/site/study/controller/vo/StudySignUpForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/resources/templates/study/paper/apply.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/resources/templates/study/paper/papers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/resources/templates/study/paper/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-student/src/main/resources/templates/study/paper/results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/java/com/sp/fc/site/teacher/controller/vo/ProblemInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/java/com/sp/fc/site/teacher/controller/vo/TeacherSignUpForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/resources/templates/teacher/paperTemplate/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/resources/templates/teacher/paperTemplate/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/resources/templates/teacher/paperTemplate/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/resources/templates/teacher/study/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/site-teacher/src/main/resources/templates/teacher/study/results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -32,15 +38,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1dfb26dd30d28d492012c5286da3b92931100823" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4ac1a98e52ee2619d703bf14898a45414d446608" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/paper-app/src/main/java/com/sp/fc/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/paper-app/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/paper-app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/paper-app/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/web-common.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/web-common.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/paper-user/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/comp/paper-user/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/site-manager/src/main/resources/templates/manager/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/site-manager/src/main/resources/templates/manager/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/site-student/src/main/java/com/sp/fc/site/study/controller/StudyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/site-student/src/main/java/com/sp/fc/site/study/controller/StudyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/site-teacher/src/main/java/com/sp/fc/site/teacher/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/site-teacher/src/main/java/com/sp/fc/site/teacher/controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-common.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-common.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +66,9 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/web/site-teacher">
           <activation />
         </task>
         <projects_view>
@@ -90,7 +100,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="11-1-part3-도메인-1" />
+        <entry key="$PROJECT_DIR$" value="12-3-part3-UI-3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,6 +130,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1xAOfhkRypEHSQcIJw5YJl1ynAQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -257,27 +268,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StudentTest.학교의_학생으로_조회된다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.sp.fc.user.service.StudentTest.학교의_학생으로_조회된다&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":comp-paper-user:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="Tests in 'com.sp.fc.service'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -395,7 +385,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.StudentTest.학교의_학생으로_조회된다" />
       <item itemvalue="Gradle.PaperSolveTest.두번째_문제_풀고_중간에_제출해_버린다" />
       <item itemvalue="Gradle.PaperSolveTest.상태에_따라_시험지가_조회된다" />
       <item itemvalue="Gradle.PaperSolveTest" />
