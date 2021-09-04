@@ -43,3 +43,4 @@
 ## 05. JWT 토큰 다루기
   - JWT 토큰
   - AuthToken을 이용한 로그인
+  - RefreshToken을 이용한 로그인
