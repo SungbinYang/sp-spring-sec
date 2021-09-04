@@ -39,12 +39,10 @@ public class TeacherSignupController {
                 .password(passwordEncoder.encode(form.getPassword()))
                 .enabled(true)
                 .build();
-        schoolService.findSchool(form.getSchoolId()).ifPresent(school -> teacher.setSchool(school));
+        schoolService.findSchool(form.getSchoolId()).ifPresent(teacher::setSchool);
         User saved = userService.save(teacher);
         userService.addAuthority(saved.getUserId(), Authority.ROLE_TEACHER);
         model.addAttribute("site", "teacher");
         return "loginForm.html";
     }
-
-
 }

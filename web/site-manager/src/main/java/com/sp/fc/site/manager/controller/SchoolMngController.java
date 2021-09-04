@@ -32,7 +32,7 @@ public class SchoolMngController {
     ){
         model.addAttribute("menu", "school");
         Page<School> schoolList = schoolService.list(pageNum, size);
-        schoolList.getContent().stream().forEach(school->{
+        schoolList.getContent().forEach(school->{
             school.setTeacherCount(userService.countTeacher(school.getSchoolId()));
             school.setStudyCount(userService.countStudent(school.getSchoolId()));
         });

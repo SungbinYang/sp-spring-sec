@@ -32,15 +32,15 @@
             </thead>
             <tbody>
             <tr th:each="s : ${page?.content}" th:object="${s}">
-                <td th:text="*{schoolName}">선원초 </td>
+                <td th:text="*{schoolName}">명지전문대 </td>
                 <td th:text="*{grade}">1</td>
-                <td th:text="*{name}"> jongwon </td>
+                <td th:text="*{name}"> sungbin </td>
                 <td th:text="*{email}">test@name.com</td>
             </tr>
             </tbody>
         </table>
 
-        <div th:replace="/paging.html :: paging(path='/manager/study/lis', page=${page})" />
+        <div th:replace="/paging.html :: paging(path='/manager/study/list', page=${page})" />
 
     </main>
 </div>

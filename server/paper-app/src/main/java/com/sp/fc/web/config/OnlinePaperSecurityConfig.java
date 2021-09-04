@@ -64,8 +64,8 @@ public class OnlinePaperSecurityConfig extends WebSecurityConfigurerAdapter {
                     ;
                 })
                 .rememberMe(config->{
-                            config.rememberMeServices(rememberMeServices())
-                            ;
+                    config.rememberMeServices(rememberMeServices())
+                    ;
                 })
                 .addFilterAt(filter, UsernamePasswordAuthenticationFilter.class)
                 .exceptionHandling(exception->{

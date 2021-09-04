@@ -6,18 +6,13 @@ import com.sp.fc.paper.domain.Problem;
 import com.sp.fc.paper.service.PaperService;
 import com.sp.fc.paper.service.PaperTemplateService;
 import com.sp.fc.site.teacher.controller.vo.ProblemInput;
-import com.sp.fc.user.domain.Authority;
-import com.sp.fc.user.domain.School;
 import com.sp.fc.user.domain.User;
-import com.sp.fc.user.service.SchoolService;
 import com.sp.fc.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
 import org.springframework.http.MediaType;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -74,8 +69,8 @@ public class TeacherController {
 
         return paperTemplateService.findProblemTemplate(paperTemplateId).map(paperTemplate->{
             List<Paper> papers = paperService.getPapers(paperTemplateId);
-            Map<Long, User> userMap = userService.getUsers(papers.stream().map(p->p.getStudyUserId()).collect(Collectors.toList()));
-            papers.stream().forEach(paper -> paper.setUser(userMap.get(paper.getStudyUserId())));
+            Map<Long, User> userMap = userService.getUsers(papers.stream().map(Paper::getStudyUserId).collect(Collectors.toList()));
+            papers.forEach(paper -> paper.setUser(userMap.get(paper.getStudyUserId())));
             model.addAttribute("template", paperTemplateService.findById(paperTemplateId).get());
             model.addAttribute("papers", papers);
             return "/teacher/study/results.html";
@@ -152,7 +147,7 @@ public class TeacherController {
             @AuthenticationPrincipal User user, Model model
     ){
         List<User> studyList = userService.findTeacherStudentList(user.getUserId());
-        paperService.publishPaper(paperTemplateId, studyList.stream().map(u->u.getUserId()).collect(Collectors.toList()));
+        paperService.publishPaper(paperTemplateId, studyList.stream().map(User::getUserId).collect(Collectors.toList()));
         return "redirect:/teacher/paperTemplate/list";
     }
 }

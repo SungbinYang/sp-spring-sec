@@ -27,7 +27,7 @@ public class TeacherMngController {
         Page<TeacherData> teacherList = userService.listTeachers(pageNum, size)
                 .map(teacher->new TeacherData(teacher.getSchool().getName(),
                         teacher.getUserId(), teacher.getName(), teacher.getEmail(), 0L));
-        teacherList.getContent().stream().forEach(data->{
+        teacherList.getContent().forEach(data->{
             data.setStudentCount(userService.findTeacherStudentCount(data.getUserId()));
         });
         model.addAttribute("page", teacherList);

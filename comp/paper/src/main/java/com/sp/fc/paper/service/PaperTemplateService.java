@@ -9,7 +9,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.security.access.AccessDeniedException;
-import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -83,7 +82,7 @@ public class PaperTemplateService {
         problemService.updateProblem(problemId, content, answer);
     }
 
-//    @PostAuthorize("returnObject.isEmpty() || returnObject.get().userId == principal.userId")
+    //    @PostAuthorize("returnObject.isEmpty() || returnObject.get().userId == principal.userId")
     @Transactional(readOnly = true)
     public Optional<PaperTemplate> findProblemTemplate(Long paperTemplateId) {
         return paperTemplateRepository.findById(paperTemplateId).map(pt->{
@@ -103,8 +102,7 @@ public class PaperTemplateService {
     @Transactional(readOnly = true)
     public Map<Integer, String> getPaperAnswerSheet(Long paperTemplateId) {
         Optional<PaperTemplate> template = findById(paperTemplateId);
-        if(!template.isPresent()) return new HashMap<>();
-        return template.get().getProblemList().stream().collect(Collectors.toMap(Problem::getIndexNum, Problem::getAnswer));
+        return template.map(paperTemplate -> paperTemplate.getProblemList().stream().collect(Collectors.toMap(Problem::getIndexNum, Problem::getAnswer))).orElseGet(HashMap::new);
     }
 
     @Transactional(readOnly = true)
