@@ -19,7 +19,7 @@ public class WebIntegrationTest {
         try {
             return new URI(format("http://localhost:%d%s", port, path));
         }catch(Exception ex){
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException(); // 완료
         }
     }
 
