@@ -28,13 +28,13 @@ public class JWTSimpleTest {
     @Test
     void test_1(){
         String okta_token = Jwts.builder().addClaims(
-                Map.of("name", "jongwon", "price", 3000)
-                ).signWith(SignatureAlgorithm.HS256, "jongwon")
+                Map.of("name", "sungbin", "price", 3000)
+                ).signWith(SignatureAlgorithm.HS256, "sungbin")
                 .compact();
         System.out.println(okta_token);
         printToken(okta_token);
 
-        Jws<Claims> tokenInfo = Jwts.parser().setSigningKey("jongwon").parseClaimsJws(okta_token);
+        Jws<Claims> tokenInfo = Jwts.parser().setSigningKey("sungbin").parseClaimsJws(okta_token);
         System.out.println(tokenInfo);
     }
 
@@ -43,9 +43,9 @@ public class JWTSimpleTest {
     @Test
     void test_2() {
 
-        byte[] SEC_KEY = DatatypeConverter.parseBase64Binary("jongwon");
+        byte[] SEC_KEY = DatatypeConverter.parseBase64Binary("sungbin");
 
-        String oauth0_token = JWT.create().withClaim("name", "jongwon").withClaim("price", 3000)
+        String oauth0_token = JWT.create().withClaim("name", "sungbin").withClaim("price", 3000)
                 .sign(Algorithm.HMAC256(SEC_KEY));
 
         System.out.println(oauth0_token);
@@ -61,7 +61,7 @@ public class JWTSimpleTest {
     @DisplayName("3. 만료 시간 테스트")
     @Test
     void test_3() throws InterruptedException {
-        final Algorithm AL = Algorithm.HMAC256("jongwon");
+        final Algorithm AL = Algorithm.HMAC256("sungbin");
         String token = JWT.create().withSubject("a1234")
                 .withNotBefore(new Date(System.currentTimeMillis() + 1000))
                 .withExpiresAt(new Date(System.currentTimeMillis() + 3000))
