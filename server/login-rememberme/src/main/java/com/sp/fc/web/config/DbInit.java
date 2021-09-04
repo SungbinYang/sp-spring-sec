@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DbInit implements InitializingBean {
-
+ 
     @Autowired
     private SpUserService userService;
 
