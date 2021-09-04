@@ -10,7 +10,7 @@
   * build: Gradle
   * language: java 11
   * framework: Spring Boot 2.4, Spring Data JPA, Spring Security, lombok
-  * DB: mysql 8.0
+  * DB: mysql 8.0, h2
   * View: html, css, javascript
   * View-Template : Thymleaf, Bootstrap 4.0, jQuery
   * Test: JUnit5, spring test
