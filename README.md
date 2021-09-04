@@ -1,6 +1,6 @@
 # sp-spring-sec 
 
-## 00. [비대면 시험사이트 소소코드 보기]()
+## 00. [비대면 시험사이트 소소코드 보기](https://github.com/SungbinYang/sp-spring-sec/tree/13-1-part3-security-3)
 
 ## 01. 환경설정
   - gradle 프로젝트 구성
