@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RememberMeTestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RememberMeTestApplication.class, args);
+        SpringApplication.run(RememberMeTestApplication.class, args); 
     }
 
 }
