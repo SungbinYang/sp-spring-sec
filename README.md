@@ -44,3 +44,4 @@
   - JWT 토큰
   - AuthToken을 이용한 로그인
   - RefreshToken을 이용한 로그인
+  - OAuth2 로그인
